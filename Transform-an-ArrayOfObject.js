@@ -18,3 +18,15 @@ const discountedProducts=products.map((product)=>{
   };
 })
 console.log(discountedProducts);
+
+//adding attribute category
+
+const categorizedProducts = products.map(product =>{
+  let category;
+  if (product<100) category ="Budget"
+  else if (product.price<500) category = "Mid-range";
+  else category = "premium";
+  return { ...product, category};
+})
+
+console.log(categorizedProducts);

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+  <form>
+    <input type="text">
+    <br><br>
+    <input type="email">
+    <br><br>
+    <button>Submit</button>
+  </form>
+
+  <script>
+    const form = document.querySelector("form");
+    const nameInput = document.querySelector("input[type='text']")
+    const emailInput = document.querySelector("input[type='email']")
+
+    form.addEventListener("submit",()=>{
+      let name = nameInput.value;
+      let email = emailInput.value;
+
+      alert(name +" "+ email);
+    })
+  </script>
+</body>
+</html>
